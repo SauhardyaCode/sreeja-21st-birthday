@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 21st Birthday, Sreeja! 🎂💖</title>
+  <meta name="description" content="A special 21st birthday celebration website created with love for Sreeja by her cousin Sauhardya.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+  
+  <!-- Google Fonts: Bubbly & Friendly Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Comfortaa:wght@500;700&family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cute Asset Preloader Screen -->
+  <div id="cutePreloader" class="preloader-overlay">
+    <div class="preloader-card">
+      <div class="preloader-icon-container">
+        <span class="preloader-mascot">🎂</span>
+        <span class="preloader-sparkle sparkle-1">✨</span>
+        <span class="preloader-sparkle sparkle-2">💖</span>
+        <span class="preloader-sparkle sparkle-3">🌟</span>
+      </div>
+      <h2 class="preloader-title">Happy 21st, Shuju! ✨</h2>
+      <p id="preloaderQuote" class="preloader-quote">Baking Sreeja's 21st Birthday Cake... 🎂</p>
+      <div class="preloader-bar-wrapper">
+        <div id="preloaderProgressBar" class="preloader-bar-fill"></div>
+      </div>
+      <div class="preloader-meta">
+        <span id="preloaderPercent" class="preloader-percent">0%</span>
+        <span class="preloader-status">Gathering memories & surprises...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ambient Floating Background Shapes -->
+  <div class="ambient-bg">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+  </div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="top-nav">
+    <div class="brand-badge">
+      <span>🎂</span>
+      <span>Shuju's 21st</span>
+    </div>
+    <div class="top-actions">
+      <span id="pageIndicator" class="brand-badge" style="color:#7A6577; font-weight:600;">Page 1 of 5</span>
+      <button id="musicToggle" class="icon-btn music-btn active" title="Toggle background melody">
+        <span>🎵</span>
+        <span>Music: Playing</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-wrapper">
+
+    <!-- ====================================================================
+         PAGE 1: WELCOME & INTERACTIVE CAKE BLOW (Features pic_start.jpg)
+         ==================================================================== -->
+    <section id="page-1" class="page-section active">
+      <div class="cute-card">
+        <div id="p1-badge" class="card-ribbon">✨ Special 21st Birthday Edition ✨</div>
+        <h1 id="p1-title" class="main-title">Happy 21st Birthday, Shuju! 🎂💖</h1>
+        
+        <!-- Featured Starting Picture: pic_start.jpg -->
+        <div class="polaroid-frame">
+          <div class="polaroid-tape"></div>
+          <img src="assets/optimized/pic_start.jpg" alt="Sreeja Starting Photo" class="polaroid-img" onerror="this.src='pic_start.jpg'">
+          <div class="polaroid-caption">Turning 21 never looked so radiant! 🌸</div>
+        </div>
+
+        <div class="story-text">
+          <div style="margin: 10px 0 16px 0;">
+            <img src="assets/gifs/start.gif" alt="Cute Birthday Greeting" style="max-width: 180px; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+          </div>
+          <p id="p1-text-1" style="margin-bottom: 8px;">To the most wonderful sister, best friend, and partner-in-crime...</p>
+          <p id="p1-text-2">Welcome to your official 21st Birthday Wish! Today is all about celebrating YOU, your infectious smile, and all the precious moments we share.</p>
+        </div>
+
+        <!-- Interactive 21st Birthday Cake with Blowable Candles -->
+        <div id="interactiveCake" class="cake-container" title="Click anywhere on the cake to blow out candles!">
+          <img id="cakeGif" src="assets/gifs/cake_lit.gif" alt="Birthday Cake with 21 Candles" class="cake-gif-img">
+          <div id="cakePrompt" class="cake-instruction">Tap the candles to blow them out & make a wish! 🕯️</div>
+        </div>
+
+        <div>
+          <button id="p1-btn" class="btn-primary" onclick="goToPage(2)">
+            Unwrap Your Birthday Surprises 🎁
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 2: MEMORY LANE (Photo Carousel of memories)
+         ==================================================================== -->
+    <section id="page-2" class="page-section">
+      <div class="cute-card">
+        <div class="card-ribbon">📸 Chapter 1 • Memories</div>
+        <h2 id="p2-title" class="main-title">21 Years of Pure Sunshine 📸💕</h2>
+        <p id="p2-subtitle" class="subtitle">A stroll down memory lane with your favorite cousin...</p>
+
+        <!-- Carousel -->
+        <div id="carouselWrapper" class="carousel-wrapper">
+          <div id="slidesContainer" class="slides-container">
+            <!-- Dynamic slides inserted by app.js -->
+          </div>
+        </div>
+
+        <!-- Carousel Navigation & Dots -->
+        <div class="carousel-controls">
+          <button class="carousel-arrow" onclick="prevSlide()" aria-label="Previous photo">❮</button>
+          <div id="dotsContainer" class="carousel-dots">
+            <!-- Dynamic dots inserted by app.js -->
+          </div>
+          <button class="carousel-arrow" onclick="nextSlide()" aria-label="Next photo">❯</button>
+        </div>
+
+        <div>
+          <button class="heart-tap-btn" onclick="triggerHeartTap(event)">
+            <span>❤️</span>
+            <span>Send Love to this Memory</span>
+          </button>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-row">
+          <button class="btn-secondary" onclick="goToPage(1)">❮ Back</button>
+          <button id="p2-btn" class="btn-primary" onclick="goToPage(3)">Claim Your Birthday Gift 🎁 ➔</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 3: INTERACTIVE BIRTHDAY GIFT MENU (The 8 Gifts Choice!)
+         ==================================================================== -->
+    <section id="page-3" class="page-section">
+      <div class="cute-card">
+        <div class="card-ribbon">🎁 Chapter 2 • Birthday Wishlist</div>
+        <h2 id="p3-title" class="main-title">Pick Your 21st Birthday Gift! 🎁✨</h2>
+        <p id="p3-subtitle" class="subtitle">
+          Choose any one gift from the menu below. Cousin Sauhardya is legally & emotionally obligated to deliver it! 😉
+        </p>
+
+        <!-- 8 Interactive Gift Selection Cards -->
+        <div class="gift-grid">
+          <!-- 1. Lipstick -->
+          <div class="gift-card" data-gift="lipstick">
+            <div class="gift-selected-badge">✓</div>
+            <div class="gift-icon">💄</div>
+            <div class="gift-title">Lipstick</div>
+          </div>
+
+          <!-- 2. Nailpolish -->
+          <div class="gift-card" data-gift="nailpolish">
+            <div class="gift-selected-badge">✓</div>
+            <div class="gift-icon">💅</div>
+            <div class="gift-title">Nail Polish</div>
+          </div>
+
+          <!-- 3. Snacks -->
+          <div class="gift-card" data-gift="snacks">
+            <div class="gift-selected-badge">✓</div>
+            <div class="gift-icon">🥨</div>
+            <div class="gift-title">Snacks Party</div>
+          </div>
+
+          <!-- 4. Chocolates -->
+          <div class="gift-card" data-gift="chocolates">
+            <div class="gift-selected-badge">✓</div>
+            <div class="gift-icon">🍫</div>
+            <div class="gift-title">Chocolates</div>
+          </div>
+
+          <!-- 5. Jaadu Ki Jhappi -->
+          <div class="gift-card" data-gift="jaadu ki jhappi">
+            <div class="gift-selected-badge">✓</div>
+            <div class="gift-icon">🤗</div>
+            <div class="gift-title">Jaadu Ki Jhappi</div>
+          </div>
+
+          <!-- 6. Waffle Party -->
+          <div class="gift-card" data-gift="waffle party">
+            <div class="gift-selected-badge">✓</div>
+            <div class="gift-icon">🧇</div>
+            <div class="gift-title">Waffle Party</div>
+          </div>
+
+          <!-- 7. Phuchka Party -->
+          <div class="gift-card" data-gift="phuchka party">
+            <div class="gift-selected-badge">✓</div>
+            <div class="gift-icon">🥟</div>
+            <div class="gift-title">Phuchka Party</div>
+          </div>
+
+          <!-- 8. Kissy -->
+          <div class="gift-card" data-gift="kissy">
+            <div class="gift-selected-badge">✓</div>
+            <div class="gift-icon">💋</div>
+            <div class="gift-title">Kissy</div>
+          </div>
+        </div>
+
+        <!-- Dynamic Gift Claim Voucher Box -->
+        <div id="giftVoucher" class="gift-voucher">
+          <div class="voucher-badge">CLAIMED WITH LOVE ❤️</div>
+          <h3 id="voucherTitle" class="voucher-title"></h3>
+          <p id="voucherText" class="voucher-text"></p>
+          <div id="voucherMeta" class="voucher-meta"></div>
+
+          <!-- Direct Dispatch Actions for Sauhardya -->
+          <div class="voucher-notify-box">
+            <div class="notify-instruction">📢 Send this claim to Sauhardya so he can get it ready!</div>
+            <div class="voucher-btn-group">
+              <a id="telegramShareBtn" href="#" target="_blank" class="btn-notify btn-telegram" onclick="recordGiftSent('telegram')">
+                <span>✈️</span>
+                <span>Send to Sauhardya on Telegram</span>
+              </a>
+              <a id="whatsappShareBtn" href="#" target="_blank" class="btn-notify btn-whatsapp" onclick="recordGiftSent('whatsapp')">
+                <span>💬</span>
+                <span>Send via WhatsApp</span>
+              </a>
+              <button id="copyVoucherBtn" class="btn-notify btn-copy" onclick="copyGiftVoucher()">
+                <span>📋</span>
+                <span id="copyBtnText">Copy Claim Code</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-row">
+          <button class="btn-secondary" onclick="goToPage(2)">❮ Back</button>
+          <button id="p3-btn" class="btn-primary" onclick="proceedFromGifts(4)">Read Your Special Letter 💌 ➔</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 4: THE GOLDEN BIRTHDAY LETTER & SHAYARIS
+         ==================================================================== -->
+    <section id="page-4" class="page-section">
+      <div class="cute-card">
+        <div class="card-ribbon">💌 Chapter 3 • The Golden Letter</div>
+        <h2 id="p4-title" class="main-title">A Special Letter for Your 21st 💌</h2>
+        <p id="p4-subtitle" class="subtitle">From Your Luckiest Cousin...</p>
+
+        <!-- Parchment Style Letter Paper -->
+        <div class="envelope-wrapper">
+          <div class="letter-paper">
+            <div id="letter-salutation" class="letter-salutation">Dear Sreeja,</div>
+            
+            <p id="letter-opening" class="letter-paragraph">
+              I hope this letter finds you with a healthy, glowing, and smiling face! Today you step into 21 — an age of dreams, freedom, growth, and endless possibilities...
+            </p>
+
+            <!-- Custom Colored Shayaris Section (Editable in messages.js) -->
+            <div id="shayari-list" class="shayari-container">
+              <!-- Dynamically populated from messages.js -->
+            </div>
+
+            <!-- Continuation Body Paragraphs -->
+            <div id="letter-body">
+              <!-- Dynamically populated from messages.js -->
+            </div>
+
+            <div style="margin-top: 30px;">
+              <div id="letter-closing" style="color: #7A6577; font-weight: 600;">Always your biggest supporter,</div>
+              <div id="letter-signature" class="letter-signoff">Your Luckiest Cousin,<br>Sauhardya ❤️</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-row">
+          <button class="btn-secondary" onclick="goToPage(3)">❮ Back</button>
+          <button id="p4-btn" class="btn-primary" onclick="goToPage(5)">One Final Surprise! 🥂 ➔</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 5: GRAND FINALE & SIGNING OFF (Features pic_end.jpg)
+         ==================================================================== -->
+    <section id="page-5" class="page-section">
+      <div class="cute-card">
+        <div class="card-ribbon">🎉 Final Surprise • Celebration</div>
+        <h2 id="p5-title" class="main-title">Happy 21st, Sreeja! Let's Celebrate! 🎉💃</h2>
+        <p id="p5-subtitle" class="subtitle">Cheers to 21 years of magic, memories, and madness!</p>
+
+        <!-- Featured Ending Picture: pic_end.jpg -->
+        <div class="polaroid-frame">
+          <div class="polaroid-tape"></div>
+          <img src="assets/optimized/pic_end.jpg" alt="Sreeja & Sauhardya Finale Photo" class="polaroid-img" onerror="this.src='pic_end.jpg'">
+          <div class="polaroid-caption">Best cousins and partners-in-crime forever! ✨💛</div>
+        </div>
+
+        <!-- Cute Celebratory GIFs -->
+        <div class="celebration-gifs">
+          <img src="assets/gifs/dance.gif" alt="Happy Dance" class="cute-gif">
+          <img src="assets/gifs/bye.gif" alt="Celebration Scooty" class="cute-gif">
+        </div>
+
+        <!-- Playable Birthday Drum Kit (In place of shower confetti & heart buttons) -->
+        <div class="drum-kit-section">
+          <h3 class="drum-kit-title">🥁 Play the Birthday Drums for Sreeja!</h3>
+          <p class="drum-kit-subtitle">Tap the drums to jam out and celebrate turning 21!</p>
+          
+          <div class="drum-grid">
+            <!-- 1. Bass / Kick Drum -->
+            <div class="drum-pad drum-kick" onclick="playDrum('kick', event)">
+              <div class="drum-pad-icon">🥁</div>
+              <div class="drum-pad-name">Bass Drum</div>
+              <div class="drum-pad-sound">Boom!</div>
+            </div>
+
+            <!-- 2. Snare Drum -->
+            <div class="drum-pad drum-snare" onclick="playDrum('snare', event)">
+              <div class="drum-pad-icon">💥</div>
+              <div class="drum-pad-name">Snare</div>
+              <div class="drum-pad-sound">Snap!</div>
+            </div>
+
+            <!-- 3. Tom / Bongo -->
+            <div class="drum-pad drum-tom" onclick="playDrum('tom', event)">
+              <div class="drum-pad-icon">🪘</div>
+              <div class="drum-pad-name">Tom / Bongo</div>
+              <div class="drum-pad-sound">Dum!</div>
+            </div>
+
+            <!-- 4. Crash Cymbal -->
+            <div class="drum-pad drum-cymbal" onclick="playDrum('cymbal', event)">
+              <div class="drum-pad-icon">✨</div>
+              <div class="drum-pad-name">Crash Cymbal</div>
+              <div class="drum-pad-sound">Tsshh!</div>
+            </div>
+          </div>
+
+          <!-- Celebratory Drumroll Button -->
+          <button class="drum-roll-btn" onclick="playDrumRoll(event)">
+            <span>🥁🔥</span>
+            <span>Play Birthday Drumroll & Crash!</span>
+          </button>
+        </div>
+
+        <!-- Signing Off Story Text -->
+        <div class="story-text">
+          <p id="p5-text-1" style="margin-bottom: 8px;">You have officially reached the end of this 21st birthday treasure hunt!</p>
+          <p id="p5-text-2" style="margin-bottom: 8px;">I hope this brought a huge smile to your face today. You deserve all the happiness, good health, and success this universe has to offer.</p>
+          <p id="p5-text-3">Now close this tab, grab your birthday cake, and ping me on Telegram! 🍰🛵💨</p>
+        </div>
+
+        <div id="cheers-text" class="cheers-badge">Cheers to 21 Wonderful Years!! 🥂✨</div>
+
+        <!-- Finale Claimed Gift Lock-In Box -->
+        <div id="finaleGiftBadge" class="finale-gift-badge" style="display: none;"></div>
+
+        <div>
+          <button class="btn-secondary" onclick="goToPage(1)" style="margin-top: 15px;">
+            <span>🔄</span>
+            <span>Experience Again from Start</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Gift Confirmation / Telegram Dispatch Modal -->
+  <div id="giftModal" class="custom-modal-overlay">
+    <div class="custom-modal-card">
+      <div style="font-size: 2.8rem; margin-bottom: 8px;">🎁✨</div>
+      <h3 id="modalGiftTitle" class="modal-title">Notify Sauhardya!</h3>
+      <p id="modalGiftText" class="modal-text">
+        You chose <b id="modalChosenGift">your gift</b>! Send this claim to Sauhardya on Telegram right now so he can arrange it for you!
+      </p>
+      <div class="modal-actions">
+        <a id="modalTelegramBtn" href="#" target="_blank" class="btn-notify btn-telegram" style="justify-content: center; width: 100%;" onclick="closeModalAndProceed(4)">
+          <span>✈️</span>
+          <span>Send on Telegram Now</span>
+        </a>
+        <button class="btn-secondary" style="margin: 0; justify-content: center; width: 100%;" onclick="closeModalAndProceed(4)">
+          <span>Continue to Letter 💌</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts: Ordered with messages config first, then helpers, then app -->
+  <script src="messages.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src="js/sound.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
