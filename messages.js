@@ -249,7 +249,7 @@ const birthdayMessages = {
     ],
 
     // Sign-off
-    closing: "Always your biggest supporter,",
+    closing: "One of your biggest supporters,",
     signature: "Your Luckiest Cousin,\nSauhardya ❤️",
 
     buttonText: "One Final Surprise! 🥂 ➔"
