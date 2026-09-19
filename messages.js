@@ -200,10 +200,10 @@ const birthdayMessages = {
         colorName: "brown",
         colorCode: "#8D4004",
         lines: [
-          "Daasta shuru hui thi bachpan ke us anokhe andaaz se,",
-          "Khushiyan banti thhi hansi aur mitti ki mehak ke saath se..",
-          "Waqt badla, mausam badle, par rishta raha hamesha paak,",
-          "Aaj ikkisve janamdin par dua hai, har pal ho behisaab khaas!"
+          "Daasta shuru hui bachpan ke us anokhe andaaz se,",
+          "Memories banti gayi pyaare logo k saath se..",
+          "Waqt badla, mausam badle, par rishta raha first class,",
+          "Aaj ikkisve janamdin par dua hai, har pal ho hamesha khaas!"
         ]
       },
       {
@@ -212,8 +212,8 @@ const birthdayMessages = {
         lines: [
           "Zindagi ki raahon mein jab aayi tum bankar roshni,",
           "Har mushkil lagne lagi aasan, har khushi bani dugni..",
-          "BFF keh lo ya sabse pyaari behen meri tum,",
-          "Tumhari hansi ke aage feeka parr jaaye har ek gham!"
+          "BFF keh lo ya sabse pyaari cousin meri tum,",
+          "Tumhari baato ke aage feeka parr jaaye har gham!"
         ]
       },
       {
@@ -223,7 +223,7 @@ const birthdayMessages = {
           "Bharosa kya hota hai, yeh maine tumse hai jaana,",
           "Bina bole har baat samajh lena, bas tumhi ko hai aana..",
           "Secrets hamare rahein hamesha safe aur sacred,",
-          "Duniya chahe jo bhi kahe, our bond is purely celebrated!"
+          "Duniya chahe jo bhi kahe, the bond needs to be celebrated!"
         ]
       },
       {
@@ -233,7 +233,7 @@ const birthdayMessages = {
           "Nobita ko Doraemon ki, Motu ko Patlu ki zaroorat jaise,",
           "Mujhe tumhari dosti aur saath ki aadat hai waise..",
           "21 saal ki ho gayi ho Shuju, par bachpana mat khona,",
-          "Cousin tera hamesha tere saath hai, kabhi akela mat hona!",
+          "Cousin tera hamesha saath hai, kabhi akela mat hona!",
           "(BF k payee bhule jais seta alada bepar 🤧)"
         ]
       }
@@ -245,7 +245,7 @@ const birthdayMessages = {
       `Believe it or not, I am always there if you need someone to share your joys, sorrows, or even your random thoughts. Kokhono bhabbi na I am busy, I won't listen or anything.. mind it!`,
       `Keep that contagious laugh alive, chase all your wildest ambitions, and never forget that our bond is carved in gold. Here's to more deep conversations, more shared secrets, and a lifetime of being best friends.`,
       `And once again a very special thanks for being the best vault of all my secrets, the most understanding cousin, and the most loving friend. I am truly lucky to have you in my life.`,
-      `Happy Birthday Sreeja! Love you to the sun (not moon) and back! 💖`
+      `Happy Birthday Sreeja! Love you to the moon and back! 💖`
     ],
 
     // Sign-off
